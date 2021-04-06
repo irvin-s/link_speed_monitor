@@ -11,7 +11,7 @@ def createFile():
         csv_file = open("dados.csv", "a+", newline='')
     else:
         csv_file = open("dados.csv", "a+", newline='')
-        csv_row = ["Hora", "Data", "Velocidade"]
+        csv_row = ["Hora", "Data", "Velocidade_download", "Velocidade_upload"]
         writetoCsv(csv_file, csv_row)
     return csv_file
 
@@ -20,18 +20,36 @@ def writetoCsv(write_obj, list_of_elem):
     csv_writer = csv.writer(write_obj)
     csv_writer.writerow(list_of_elem)
 
+def getDate():
+    today = datetime.now().strftime('%d/%m/%y')
+    current_time = datetime.now().strftime('%H:%M:%S')
+    now_date = [today, current_time]
+    return now_date
 
-def testInternet():
+def downloadCheck():
+    s = speedtest.Speedtest()
+    speed_down = s.download(threads=None)*(10**-6)
+    speed_down = round(speed_down)
+    #Timer(180, testInternet).start()
+    return speed_down
+
+
+def uploadCheck():
+    s = speedtest.Speedtest()
+    speed_up = s.upload(threads=None)*(10**-6)
+    speed_up = round(speed_up)
+    return speed_up
+
+
+def main():
     print("Verificando a velocidade da conexão!")
     csv_file = createFile()
-    s = speedtest.Speedtest()
-    data_atual = datetime.now().strftime('%d/%m/%y')
-    hora_atual = datetime.now().strftime('%H:%M:%S')
-    velocidade = s.download(threads=None)*(10**-6)
-    csv_row = [data_atual, hora_atual, round(velocidade)]
+    down = downloadCheck()
+    up = uploadCheck()
+    csv_row = getDate()
+    csv_row.append(down)
+    csv_row.append(up)
     writetoCsv(csv_file, csv_row)
-    #Timer(180, testInternet).start()
-
 
 if __name__ == "__main__":
-    testInternet()
+    main()
