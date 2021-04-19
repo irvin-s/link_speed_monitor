@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Welcome to link_speed_monitor 👋</h1>
+<h1 align="center">Welcome to link_speed_monitor 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
@@ -8,7 +8,7 @@
 ## Install
 
 ```sh
-Clone this repository and install the requirements using pip install -r requirements.txt
+Clone this repository and install the requirements using `pip install -r requirements.txt`
 ```
 
 ## Usage
