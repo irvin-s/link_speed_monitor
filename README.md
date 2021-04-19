@@ -17,6 +17,12 @@ Clone this repository and install the requirements using `pip install -r require
 python3 main.py
 ```
 
+## Results
+
+```sh
+result/dados.csv
+```
+
 ## Author
 
 👤 **Irvin Bezerra**
