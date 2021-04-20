@@ -7,8 +7,9 @@
 
 ## Install
 
+> Clone this repository and install the requirements
 ```sh
-Clone this repository and install the requirements using `pip install -r requirements.txt`
+pip install -r requirements.txt
 ```
 
 ## Usage
