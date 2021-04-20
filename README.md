@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> Monitoring the Internet link speed and log the results into a csv file.
+> Monitoring the Internet link speed and log the results into a CSV file.
 
 ## Install
 
