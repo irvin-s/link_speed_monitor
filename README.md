@@ -7,21 +7,21 @@
 
 ## Install
 
-> Clone this repository and install the requirements
+Clone this repository and install the requirements
 ```sh
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-> Run the following command
+Run the following command
 ```sh
 python3 main.py
 ```
 
 ### Scheduling
 
-> If you want to monitor the link speed for a while, open the main.py file, and in line 8 set the time interval that the test should be executed.
+If you want to monitor the link speed for a while, open the main.py file, and in line 8 set the time interval that the test should be executed.
 ```
 #Timer(180, main).start()
 ```
