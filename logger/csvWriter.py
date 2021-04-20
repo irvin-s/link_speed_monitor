@@ -2,12 +2,12 @@ import os.path
 import csv
 
 def createFile():
-    file = os.path.isfile("results/dados.csv")
+    file = os.path.isfile("results/data.csv")
     if file:
-        csv_file = open("results/dados.csv", "a+", newline='')
+        csv_file = open("results/data.csv", "a+", newline='')
     else:
-        csv_file = open("results/dados.csv", "a+", newline='')
-        csv_row = ["Hora", "Data", "Velocidade_download", "Velocidade_upload"]
+        csv_file = open("results/data.csv", "a+", newline='')
+        csv_row = ["Hour", "Date", "Download_speed(Mbit/s)", "Upload_speed(Mbit/s)"]
         writetoCsv(csv_file, csv_row)
     return csv_file
 

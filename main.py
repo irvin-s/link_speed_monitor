@@ -4,7 +4,7 @@ from logger.getDate import getDate
 from threading import Timer
 
 def main():
-    print("Verificando a velocidade da conexão!")
+    print("Verifing internet speed!")
     #Timer(180, main).start()
     csv_file = createFile()
     down = downloadCheck()
