@@ -18,14 +18,14 @@ python3 main.py
 ```
 ### Scheduling
 
-```sh
+```
 If you want to monitor the link speed for a while, open the main.py file, and in line 8 set the time interval that the test should be executed.
 ```
 
 ## Results
 
-```sh
-result/dados.csv
+```
+After run the speed test, check the results at result/dados.csv
 ```
 
 ## Author
