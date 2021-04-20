@@ -29,9 +29,7 @@ Remove # and set the time you want to set as the interval for monitoring, 180 me
 
 ## Results
 
-```
-After run the speed test, check the results at result/dados.csv
-```
+After run the speed test, check the results at result/data.csv
 
 ## Author
 
