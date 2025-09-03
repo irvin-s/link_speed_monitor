@@ -1,3 +1,5 @@
-Hour,Date,Download_speed(Mbit/s),Upload_speed(Mbit/s)
+Date,Hour,Download_speed(Mbit/s),Upload_speed(Mbit/s)
 19/04/21,21:58:49,139,8
 19/04/21,22:08:18,148,12
+22/06/21,23:13:05,207,24
+14/08/23,11:20:47,25,29
